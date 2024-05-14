@@ -1,1 +1,2 @@
-BMI Calculator, that calculates your BMI if you are healthy or not
+# 🧮 BMI Calculator
+A simple web application that calculates your Body Mass Index (BMI) to help you determine if you are within a healthy weight range.
