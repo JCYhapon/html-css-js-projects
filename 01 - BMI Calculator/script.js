@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const bmi = weight / height ** 2;
-    result.textContent = `Your BMI is ${bmi.toFixed(2)}`;
+    result.textContent = `${bmi.toFixed(2)}`;
   });
 
   resetButton.addEventListener("click", () => {
