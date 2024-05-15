@@ -1,7 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Outfit;
 }
 
 .container {
@@ -22,10 +27,20 @@
   border-radius: 10px;
   height: 500px;
   width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  box-shadow: 5px 5px 10px;
 }
 
 h1 {
   text-align: center;
+}
+
+.heightweightBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .heightBox {
@@ -34,9 +49,81 @@ h1 {
   background-color: white;
   border-radius: 10px;
   padding: 10px;
-  gap: 10px;
+  gap: 20px;
 }
 
 .heightBox > span {
   text-align: center;
+  font-weight: 500;
+}
+
+.heightBox > input {
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+  font-size: 20px;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.weightBox {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  gap: 20px;
+}
+
+.weightBox > span {
+  text-align: center;
+  font-weight: 500;
+}
+
+.weightBox > input {
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+  font-size: 20px;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  width: 320px;
+}
+
+.buttons > .reset,
+.buttons > .calculate {
+  font-size: 15px;
+  padding: 10px;
+  width: 120px;
+  background-color: rgb(98, 129, 212);
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px rgba(3, 12, 37, 0.747);
+  border: none;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.buttons > .reset:active,
+.buttons > .calculate:active {
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+.yourBMI {
+  text-align: center;
+}
+
+.result {
+  text-align: center;
+  font-size: 40px;
 }
