@@ -12,15 +12,22 @@
     <div class="container">
       <div class="box">
         <h1>BMI Calculator</h1>
-        <div>
-          <input type="number" class="height" />
-          <input type="number" class="weight" />
-        </div>
-        <div>
-          <button class="reset">Reset</button>
-          <button class="calculate">Calculate</button>
-        </div>
+        <div class="heightweightBox">
+          <div class="heightBox">
+            <span>Height (m)</span>
+            <input type="number" class="height" />
+          </div>
 
+          <div class="weightBox">
+            <span>Weight (kg)</span>
+            <input type="number" class="weight" />
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="reset">Reset</button>
+          <button class="calculate">Calculate BMI</button>
+        </div>
+        <span class="yourBMI">Your BMI is</span>
         <span class="result"></span>
       </div>
     </div>
