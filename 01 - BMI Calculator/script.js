@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const weight = parseFloat(weightInput.value);
 
     if (isNaN(height) || isNaN(weight) || height <= 0 || weight <= 0) {
-      result.textContent = "Please enter valid height and weight.";
+      error.textContent = "Please enter your height/weight";
       return;
     }
 
@@ -22,5 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
     heightInput.value = "";
     weightInput.value = "";
     result.textContent = "";
+error.textContent = "";
   });
 });
